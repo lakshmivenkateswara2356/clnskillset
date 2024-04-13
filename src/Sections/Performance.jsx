@@ -1,9 +1,9 @@
-import ApexCharts from 'apexcharts';
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 
 const Performance = () => {
-    const [chartData, setChartData] = useState({
+    const [chartData] = useState({
         series: [
             {
                 name: 'Instagram',

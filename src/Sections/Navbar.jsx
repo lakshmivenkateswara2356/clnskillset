@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Navbar = () => {
     return (
@@ -7,7 +7,7 @@ const Navbar = () => {
                 <img
                     src='search.png'
                     alt=''
-                    srcset='search.png'
+                    
                     className='w-5 h-5'
                 />
                 <input

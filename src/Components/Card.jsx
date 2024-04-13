@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Card = ({ prop }) => {
     console.log(prop);
@@ -28,6 +28,16 @@ const Card = ({ prop }) => {
             </div>
         </div>
     );
+};
+
+Card.propTypes = {
+    prop: PropTypes.shape({
+        heading: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        color: PropTypes.oneOf(['green', 'red']).isRequired,
+        profit: PropTypes.string.isRequired,
+        sidetext: PropTypes.bool,
+    }).isRequired,
 };
 
 export default Card;

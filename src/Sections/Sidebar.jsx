@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const Sidebar = () => {
     const [dashboard, setDashboard] = useState(true);
@@ -14,7 +14,7 @@ const Sidebar = () => {
                     <img
                         src='logo-full.png'
                         alt=''
-                        srcset=''
+                       
                         className='w-24 mb-10'
                     />
                 </span>

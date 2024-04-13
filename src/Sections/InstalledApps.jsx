@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const appData = [
     {
@@ -68,12 +68,12 @@ const InstalledApps = () => {
                     {appData.map((item) => {
                         console.log(item);
                         return (
-                            <div className='grid grid-cols-6 px-4 py-1 text-[#5F6980] items-center border-[#EAECF0] border-b text-sm'>
+                            <div key="" className='grid grid-cols-6 px-4 py-1 text-[#5F6980] items-center border-[#EAECF0] border-b text-sm'>
                                 <div className='flex items-center'>
                                     <img
                                         src={`${item.name.toLowerCase()}.png`}
                                         alt=''
-                                        srcset={`${item.name.toLowerCase()}.png`}
+                                        srcSet={`${item.name.toLowerCase()}.png`}
                                         className='w-16'
                                     />
                                     <span className='text-[#282828] font-semibold text-sm'>

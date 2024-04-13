@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Card from '../Components/Card';
 
 const CardData = [
@@ -60,9 +60,8 @@ const Hero = () => {
                             d='M10.8333 2.5V8.33333H15.8333L9.16663 17.5V11.6667H4.16663L10.8333 2.5Z'
                             fill='white'
                             stroke='#282828'
-                            stroke-width='1.25'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                           
+                            
                         />
                     </svg>
                     <span className='text-base font-semibold leading-7 tracking-tight'>
@@ -72,7 +71,7 @@ const Hero = () => {
             </div>
             <div className='grid max-sm:grid-cols-1 max-sm:grid-rows-4 md:grid-cols-4 gap-5'>
                 {CardData.map((prop) => {
-                    return <Card prop={prop} />;
+                    return <Card key="" prop={prop} />;
                 })}
             </div>
         </div>
